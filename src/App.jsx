@@ -1,7 +1,7 @@
-import NavBar from './NavBar';
-import Intro from './Intro';
-import Projects from './Projects';
-import Contact from './Contact';
+import NavBar from './components/NavBar';
+import Intro from './components/Intro';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 import styled from 'styled-components';
 
 const Container = styled.div`
