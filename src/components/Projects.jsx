@@ -34,7 +34,7 @@ const ProjectDescription = styled.p`
   font-size: 1rem;
 `;
 
-const Projects = () => {
+const Project = () => {
   const projectData = [
     {
       name: 'Projeto 1',
@@ -65,4 +65,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Project;
