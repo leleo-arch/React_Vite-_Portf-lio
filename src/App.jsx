@@ -15,7 +15,8 @@ function App() {
     <Container>
       <NavBar />
       <Intro />
-      <Projects />
+      <Projects/>
+      <Intro />
       <Contact />
     </Container>
   );

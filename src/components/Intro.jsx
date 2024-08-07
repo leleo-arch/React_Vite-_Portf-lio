@@ -3,17 +3,22 @@ import styled from 'styled-components';
 const IntroSection = styled.section`
   padding: 2rem 0;
   text-align: center;
+  background-color: #0F1624;
 `;
 
 const Title = styled.h2`
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: white;
+
 `;
 
 const Description = styled.p`
   font-size: 1.2rem;
   max-width: 600px;
   margin: 0 auto;
+  color: white;
+
 `;
 
 const Intro = () => {

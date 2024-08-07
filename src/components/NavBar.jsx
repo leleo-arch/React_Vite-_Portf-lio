@@ -1,68 +1,52 @@
 import styled from 'styled-components';
 
-const ProjectsSection = styled.section`
-  padding: 2rem 0;
-`;
-
-const ProjectTitle = styled.h2`
-  font-size: 2rem;
-  margin-bottom: 1rem;
+const HeaderWrapper = styled.header`
   text-align: center;
+  padding: 50px 0;
+background-color: #0F1624;
+  color: white;
 `;
 
-const ProjectList = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+const Title = styled.h1`
+  font-size: 2.5em;
+  margin: 0;
+  color: white;
+
 `;
 
-const ProjectCard = styled.div`
-  background: #f4f4f4;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
-  width: 300px;
+const Subtitle = styled.p`
+  font-size: 1.2em;
 `;
 
-const ProjectName = styled.h3`
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+const Nav = styled.nav`
+  margin-top: 20px;
 `;
 
-const ProjectDescription = styled.p`
-  font-size: 1rem;
+const NavLink = styled.a`
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #61dafb;
+  }
 `;
 
-const Projects = () => {
-  const projectData = [
-    {
-      name: 'Projeto 1',
-      description: 'Descrição do projeto 1.'
-    },
-    {
-      name: 'Projeto 2',
-      description: 'Descrição do projeto 2.'
-    },
-    {
-      name: 'Projeto 3',
-      description: 'Descrição do projeto 3.'
-    }
-  ];
+const Header = () => (
+  <HeaderWrapper>
+    <Title>Leonardo Soares</Title>
+    <Subtitle>Desenvolvedor Web</Subtitle>
+    <Nav>
+      <NavLink href="#projects">Projetos</NavLink>
+      <NavLink href="#about">Sobre</NavLink>
+      <NavLink href="#contact">Contato</NavLink>
+      <NavLink href="#technologies">Tecnologias</NavLink>
 
-  return (
-    <ProjectsSection id="projects">
-      <ProjectTitle>Meus Projetos</ProjectTitle>
-      <ProjectList>
-        {projectData.map((project, index) => (
-          <ProjectCard key={index}>
-            <ProjectName>{project.name}</ProjectName>
-            <ProjectDescription>{project.description}</ProjectDescription>
-          </ProjectCard>
-        ))}
-      </ProjectList>
-    </ProjectsSection>
-  );
-};
+    </Nav>
+  </HeaderWrapper>
+);
 
-export default Projects
+export default Header;
+
