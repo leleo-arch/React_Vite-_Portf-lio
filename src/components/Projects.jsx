@@ -37,20 +37,21 @@ const Projects = styled.div`
 `;
 
 const Project = styled.div`
-  background: #fff;
+  background: #0F1624;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgb(255, 255, 255);
   transition: box-shadow 0.3s, transform 0.3s;
   animation: ${fadeIn} 0.5s ease forwards;
   animation-delay: ${(props) => props.index * 0.1}s;
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 16px rgba(69, 212, 255, 0.7);
+
   }
 `;
 
@@ -76,13 +77,13 @@ const ProjectContent = styled.div`
 
 const ProjectTitle = styled.h3`
   font-size: 1.4em;
-  color: #333;
+  color: #fff;
   margin-bottom: 10px;
 `;
 
 const ProjectDescription = styled.p`
   font-size: 1em;
-  color: #555;
+  color: #fff;
   margin-bottom: 20px;
 `;
 
@@ -91,13 +92,13 @@ const ProjectButton = styled.a`
   padding: 10px 20px;
   font-size: 0.9em;
   color: #fff;
-  background-color: #007bff;
+  background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
   border-radius: 4px;
   text-decoration: none;
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #0056b3;
+    background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
   }
 `;
 
@@ -137,6 +138,7 @@ const projects = [
     image: 'https://img.icons8.com/color/48/000000/github.png',
     link: 'https://github.com/leleo-arch'
   },
+
   {
     title: 'Aplicativo - Jiu-Jitsu - Mobile',
     description: 'Mobile',
@@ -166,6 +168,12 @@ const projects = [
     description: 'Lading Page - Arquitetura',
     image: 'https://img.icons8.com/color/48/000000/css.png',
     link: 'https://arquitednc.netlify.app'
+  },
+  {
+    title: 'Lading Page - Click-Mint',
+    description: '',
+    image: 'https://img.icons8.com/color/48/000000/html-5.png',
+    link: 'https://clickmint.netlify.app/'
   },
   {
     title: 'Lading Page - Starbucks',
