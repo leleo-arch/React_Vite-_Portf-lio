@@ -2,6 +2,8 @@ import { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import Linkedin from "../assets/Linkedin.png"
+
 
 const fadeIn = keyframes`
   from {
@@ -41,7 +43,7 @@ const Project = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 8px;
+  border-radius: 30px 0px 30px 0px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgb(255, 255, 255);
   transition: box-shadow 0.3s, transform 0.3s;
@@ -141,67 +143,62 @@ const projects = [
 
   {
     title: 'Aplicativo - Jiu-Jitsu - Mobile',
-    description: 'Mobile',
+    description: 'O Innova Jiu é uma aplicação web voltada para praticantes de Jiu-Jitsu. A plataforma oferece recursos para facilitar o gerenciamento de treinos e a interação com a comunidade. A página principal do aplicativo fornece uma visão geral das funcionalidades e acesso a ferramentas úteis para treinos e gestão de alunos.',
     image: 'https://img.icons8.com/color/48/000000/react-native.png',
     link: 'https://innova-jiu.netlify.app'
   },
   {
     title: 'Site - Portfólio',
-    description: 'Leonardo Soares ',
+    description: 'Leonardo Soares:Este é meu portfólio pessoal, desenvolvedor Full-Stack freelancer com experiência em HTML, CSS, JavaScript, TypeScript, Node.js, React e outras tecnologias. O portfólio destaca projetos, habilidades e a trajetória profissional de Leonardo. ',
     image: 'https://img.icons8.com/color/48/000000/react-native.png',
     link: 'https://github.com/leleo-arch'
   },
   {
     title: 'Node.js',
-    description: 'ORM ',
+    description: 'Este projeto é uma API desenvolvida com Node.js e Sequelize, um ORM (Object-Relational Mapping) para Node.js que facilita a interação com bancos de dados SQL. O projeto inclui exemplos de modelos, rotas, e operações CRUD (Create, Read, Update, Delete). ',
     image: 'https://img.icons8.com/color/48/000000/nodejs.png',
     link: 'https://github.com/leleo-arch/Node_ORM_Sequelize'
   },
   {
     title: 'Site - Clima Tempo',
-    description: 'Site - Clima Tempo',
+    description: 'WeatherDNC é uma aplicação web que fornece informações meteorológicas detalhadas para diferentes locais. O site foi projetado para ser intuitivo e fácil de usar, permitindo que os usuários obtenham rapidamente dados sobre o clima atual e previsões.',
     image: 'https://img.icons8.com/color/48/000000/bootstrap.png',
     link: 'https://watherdnc.netlify.app'
   },
   {
     title: 'Lading Page - Arquitetura',
-    description: 'Lading Page - Arquitetura',
+    description: 'Este é um projeto de landing page desenvolvido para um site de arquitetura. O objetivo é apresentar os serviços e projetos de uma empresa de arquitetura, com foco em design responsivo e elegante.',
     image: 'https://img.icons8.com/color/48/000000/css.png',
     link: 'https://arquitednc.netlify.app'
   },
   {
     title: 'Lading Page - Click-Mint',
-    description: '',
+    description: 'ClickMint é uma lp de marketing digital que ajuda empresas a otimizar suas campanhas de marketing. Oferece ferramentas para análise de desempenho, gerenciamento de anúncios e criação de conteúdo.',
     image: 'https://img.icons8.com/color/48/000000/html-5.png',
     link: 'https://clickmint.netlify.app/'
   },
   {
     title: 'Lading Page - Starbucks',
-    description: 'Lading Page - Starbucks',
+    description: 'Esta é uma landing page interativa desenvolvida para a marca Starbucks. O projeto foi criado para demonstrar habilidades em design responsivo e interatividade utilizando HTML, CSS e JavaScript.',
     image: 'https://img.icons8.com/color/48/000000/javascript.png',
     link: 'https://glittering-cascaron-8bda26.netlify.app'
   },
-  {
-    title: 'Lading Page - Starbucks',
-    description: 'Lading Page - Starbucks',
-    image: 'https://img.icons8.com/color/48/000000/html-5.png',
-    link: 'https://clickmint.netlify.app'
-  },
+
   {
     title: 'Site - Conversor Money',
-    description: 'Site - Conversor Money',
+    description: 'MoneyInnova é uma aplicação web que oferece um conversor de moeda fácil de usar. A plataforma permite que os usuários convertam valores entre diferentes moedas de maneira rápida e eficiente, utilizando taxas de câmbio atualizadas.',
     image: 'https://img.icons8.com/color/48/000000/javascript.png',
     link: 'https://moneyinnova.netlify.app'
   },
   {
     title: 'Site - Sorteio',
-    description: 'Site - Sorteio',
+    description: 'Projeto simples de sorteio online, desenvolvido para gerar resultados aleatórios de forma rápida e fácil. O projeto foi construído utilizando HTML, CSS e JavaScript.',
     image: 'https://img.icons8.com/color/48/000000/javascript.png',
     link: 'https://randonsinnova.netlify.app'
   },
   {
     title: 'Lading Page - Jokenpo',
-    description: 'Lading Page - Jokenpo',
+    description: 'Jogo de Jokenpo: Permite aos usuários jogar Pedra, Papel e Tesoura contra o computador. Resultados Instantâneos: Mostra os resultados de cada rodada instantaneamente. Interface Intuitiva: Interface de usuário amigável e responsiva. Tecnologias Utilizadas Frontend: HTML, CSS, JavaScript Deploy: Netlify',
     image: 'https://img.icons8.com/color/48/000000/javascript.png',
     link: 'https://jokenpoinnova.netlify.app'
   },
@@ -255,9 +252,9 @@ const ProjectGallery = () => {
           <Modal isOpen={modalOpen}>
             <h2>{selectedProject.title}</h2>
             <p>{selectedProject.description}</p>
-            <ProjectImage src={selectedProject.image} alt={selectedProject.title} effect="blur" />
+            <ProjectImage src={selectedProject.Linkedin} alt={selectedProject.title} effect="blur" />
             <ProjectButton href={selectedProject.link} target="_blank" rel="noopener noreferrer">
-              Veja no GitHub
+              Veja mais
             </ProjectButton>
             <button onClick={closeModal}>Fechar</button>
           </Modal>

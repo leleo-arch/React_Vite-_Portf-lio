@@ -21,7 +21,7 @@ margin-top: 10px;
 
 const Title = styled.h2`
   font-size: 2.5rem;
-margin-left: 46px;
+margin-left: 50px;
   color: white;
 
 `;
