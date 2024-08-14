@@ -4,6 +4,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import styled from 'styled-components';
 import About from './components/About';
+import Technologies from './components/Technologies';
 
 
 const Container = styled.div`
@@ -18,6 +19,7 @@ function App() {
       <NavBar />
       <Intro />
       <Projects/>
+      <Technologies/>
       <About />
       <Contact />
     </Container>

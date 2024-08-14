@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import Git from "../assets/github.png"
 import Linkedin from "../assets/Linkedin.png"
+import Figma from "../assets/figma.png"
+
 
 const ContactSection = styled.section`
   padding: 2rem 0;
@@ -50,6 +52,8 @@ const Contact = () => {
       <ContactButton href="mailto:leo_deplay@outlook.com.com">Enviar E-mail</ContactButton>
       <Image src={Git} alt="git"/>
       <Image src={Linkedin} alt="linkedin"/>
+      <Image src={Figma} alt="linkedin"/>
+
     </ContactSection>
   );
 };
