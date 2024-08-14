@@ -1,8 +1,20 @@
-# React + Vite
+# Leonardo Soares - Portfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Preview](https://leonardosoares-arch.netlify.app/assets/preview.png)
 
-Currently, two official plugins are available:
+Bem-vindo ao meu portfólio pessoal! Este é um espaço onde você pode conhecer mais sobre mim, minhas habilidades e os projetos que desenvolvi ao longo da minha carreira como Desenvolvedor Full-Stack.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Acesso ao Portfólio
+Você pode acessar o portfólio através do seguinte link: [leonardosoares-arch.netlify.app](https://leonardosoares-arch.netlify.app/)
+
+## 🚀 Tecnologias Utilizadas
+Este portfólio foi desenvolvido utilizando as seguintes tecnologias:
+
+- **HTML5**: Para a estruturação do conteúdo.
+- **CSS3**: Para estilização e layout da página.
+- **JavaScript**: Para a interatividade e funcionalidades dinâmicas.
+- **React**: Framework utilizado para construir a interface do usuário.
+- **Styled-Components**: Para a estilização dinâmica e organização dos estilos no projeto.
+- **Netlify**: Utilizado para o deploy e hospedagem do site.
+
+
