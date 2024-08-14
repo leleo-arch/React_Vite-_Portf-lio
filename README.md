@@ -1,7 +1,5 @@
 # Leonardo Soares - Portfólio
 
-![Portfolio Preview](https://leonardosoares-arch.netlify.app/assets/preview.png)
-
 Bem-vindo ao meu portfólio pessoal! Este é um espaço onde você pode conhecer mais sobre mim, minhas habilidades e os projetos que desenvolvi ao longo da minha carreira como Desenvolvedor Full-Stack.
 
 ## 🌐 Acesso ao Portfólio
