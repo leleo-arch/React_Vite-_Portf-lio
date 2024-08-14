@@ -46,7 +46,7 @@ const NavLink = styled.a`
 `;
 
 const Header = () => (
-  <HeaderWrapper>
+  <HeaderWrapper id="Nav">
     <Title>Leonardo Soares</Title>
     <Subtitle>Desenvolvedor Web</Subtitle>
     

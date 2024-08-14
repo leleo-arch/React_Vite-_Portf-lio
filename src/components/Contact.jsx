@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import Git from "../assets/github.png"
+import Linkedin from "../assets/Linkedin.png"
 
 const ContactSection = styled.section`
   padding: 2rem 0;
@@ -8,8 +10,12 @@ const ContactSection = styled.section`
 
 const ContactTitle = styled.h2`
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: white;
+
+`;
+const Image = styled.img`
+margin-left: 30px;
 
 `;
 
@@ -41,7 +47,9 @@ const Contact = () => {
       <ContactDescription>
         Gostaria de saber mais sobre meus projetos ou discutir uma oportunidade? Sinta-se à vontade para me enviar uma mensagem!
       </ContactDescription>
-      <ContactButton href="mailto:seu-email@exemplo.com">Enviar E-mail</ContactButton>
+      <ContactButton href="mailto:leo_deplay@outlook.com.com">Enviar E-mail</ContactButton>
+      <Image src={Git} alt="git"/>
+      <Image src={Linkedin} alt="linkedin"/>
     </ContactSection>
   );
 };

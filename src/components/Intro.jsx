@@ -40,7 +40,7 @@ const Intro = () => {
     <IntroSection id="intro">
       <Title>Bem-vindo ao Meu Portfólio</Title>
       <Description>
-        Olá! Sou um desenvolvedor full-stack apaixonado por criar soluções web inovadoras e eficientes. Aqui você encontrará alguns dos meus projetos recentes e informações para entrar em contato comigo.
+        Olá! Sou um desenvolvedor apaixonado por criar soluções web inovadoras e eficientes. Aqui você encontrará alguns dos meus projetos recentes e informações para entrar em contato comigo.
       </Description>
       <Button>Saiba mais</Button>
     </IntroSection>

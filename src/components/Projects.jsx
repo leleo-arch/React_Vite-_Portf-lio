@@ -2,7 +2,6 @@ import { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import Linkedin from "../assets/Linkedin.png"
 
 
 const fadeIn = keyframes`
@@ -23,8 +22,9 @@ const GalleryWrapper = styled.section`
 `;
 
 const GalleryTitle = styled.h2`
-  text-align: center;
-  margin-bottom: 40px;
+  text-align: start;
+  margin-bottom: 80px;
+  margin-left: 50px;
   font-size: 2.2em;
   color: #ffffff;
   animation: ${fadeIn} 1s ease forwards;
@@ -33,8 +33,8 @@ const GalleryTitle = styled.h2`
 const Projects = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
+  gap: 100px;
+  max-width: 1100px;
   margin: 0 auto;
 `;
 
@@ -43,6 +43,7 @@ const Project = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: start;
   border-radius: 30px 0px 30px 0px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgb(255, 255, 255);
@@ -61,10 +62,10 @@ const ProjectImage = styled(LazyLoadImage)`
   width: 90px;
   display: flex;
   justify-content: center;
-  margin-left: 140px;
+  margin-left: 110px;
   height: auto;
   margin-top: 20px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ffffff;
   transition: transform 0.3s ease-in-out;
 
   &:hover {
@@ -74,7 +75,7 @@ const ProjectImage = styled(LazyLoadImage)`
 
 const ProjectContent = styled.div`
   padding: 20px;
-  text-align: center;
+  text-align: start;
 `;
 
 const ProjectTitle = styled.h3`

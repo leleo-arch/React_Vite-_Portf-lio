@@ -3,6 +3,8 @@ import Intro from './components/Intro';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import styled from 'styled-components';
+import About from './components/About';
+
 
 const Container = styled.div`
   font-family: Arial, sans-serif;
@@ -16,7 +18,7 @@ function App() {
       <NavBar />
       <Intro />
       <Projects/>
-      <Intro />
+      <About />
       <Contact />
     </Container>
   );
