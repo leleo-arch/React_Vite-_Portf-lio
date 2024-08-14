@@ -45,6 +45,17 @@ const NavLink = styled.a`
   }
 `;
 
+const NavLink2 = styled.a`
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #61dafb;
+  }
+`;
+
 const Header = () => (
   <HeaderWrapper id="Nav">
     <Title>Leonardo Soares</Title>
@@ -55,8 +66,12 @@ const Header = () => (
       <NavLink href="#about">Sobre</NavLink>
       <NavLink href="#contact">Contato</NavLink>
       <NavLink href="#technologies">Tecnologias</NavLink>
-      <Image src={Git} alt="git"/>
-      <Image src={Linkedin} alt="linkedin"/>
+      <NavLink2 href="https://github.com/leleo-arch">
+      <Image src={Git}  alt="git"/>
+      </NavLink2>
+      <NavLink2  href="https://www.linkedin.com/in/leonardo-soares-1842b32b0/" >
+      <Image  src={Linkedin}  alt="linkedin"/>
+      </NavLink2>
 
 
     </Nav>
