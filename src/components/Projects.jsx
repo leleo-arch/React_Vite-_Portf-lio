@@ -1,8 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
 
 const fadeIn = keyframes`
   from {
@@ -18,7 +17,6 @@ const fadeIn = keyframes`
 const GalleryWrapper = styled.section`
   padding: 60px 20px;
   background-color: #0F1624;
-  
 `;
 
 const GalleryTitle = styled.h2`
@@ -54,7 +52,6 @@ const Project = styled.div`
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 16px rgba(69, 212, 255, 0.7);
-
   }
 `;
 
@@ -96,7 +93,7 @@ const ProjectButton = styled.a`
   font-size: 0.9em;
   color: #fff;
   background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-  border-radius: 4px;
+  border-radius: 24px;
   text-decoration: none;
   transition: background-color 0.3s;
 
@@ -117,7 +114,7 @@ const Modal = styled.div`
   transform: translate(-50%, -50%);
   background: white;
   padding: 20px;
-  gap:10px;
+  gap: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   z-index: 1000;
@@ -145,7 +142,7 @@ const projects = [
   {
     title: 'Aplicativo - Jiu-Jitsu - Mobile',
     description: 'O Innova Jiu é uma aplicação web voltada para praticantes de Jiu-Jitsu. A plataforma oferece recursos para facilitar o gerenciamento de treinos e a interação com a comunidade. A página principal do aplicativo fornece uma visão geral das funcionalidades e acesso a ferramentas úteis para treinos e gestão de alunos.',
-    image: 'https://img.icons8.com/color/48/000000/react-native.png',
+    image:  'https://img.icons8.com/color/48/000000/react-native.png',
     link: 'https://innova-jiu.netlify.app'
   },
   {
@@ -225,6 +222,19 @@ const ProjectGallery = () => {
     setModalOpen(false);
   };
 
+  useEffect(() => {
+    const handleEscapeKey = (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    };
+
+    window.addEventListener('keydown', handleEscapeKey);
+    return () => {
+      window.removeEventListener('keydown', handleEscapeKey);
+    };
+  }, []);
+
   return (
     <GalleryWrapper id="projects">
       <GalleryTitle>Projetos</GalleryTitle>
@@ -253,8 +263,8 @@ const ProjectGallery = () => {
           <Modal isOpen={modalOpen}>
             <h2>{selectedProject.title}</h2>
             <p>{selectedProject.description}</p>
-            <ProjectImage src={selectedProject.Linkedin} alt={selectedProject.title} effect="blur" />
-            <ProjectButton href={selectedProject.link} target="_blank" rel="noopener noreferrer">
+            <ProjectImage src={selectedProject} alt={selectedProject.title} effect="blur" />
+            <ProjectButton href={selectedProject.link} target="_blank" rel="">
               Veja mais
             </ProjectButton>
             <button onClick={closeModal}>Fechar</button>
